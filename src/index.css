@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Orbitron', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add any other global styles here */

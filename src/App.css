@@ -1,0 +1,14 @@
+.app-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.navbar-glass-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}

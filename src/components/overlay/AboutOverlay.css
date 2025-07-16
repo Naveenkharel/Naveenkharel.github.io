@@ -1,0 +1,56 @@
+.overlay-backdrop {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(2, 10, 30, 0.75);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.about-box {
+  position: relative;
+  background-color: #10151f;
+  border: 1px solid rgba(53, 201, 201, 0.2);
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 0 20px rgba(53, 201, 201, 0.15);
+  font-family: 'Orbitron', sans-serif;
+  text-align: justify;
+  line-height: 1.6;
+
+  /* Layout sizing */
+  margin: 22vh 5vw 20vh 5vw;       /* margin from top and side */
+  height: calc(100vh - 40vh);   /* cover up to the bottom of screen */
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.about-box h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #00eaff;
+  font-size: 1.8rem;
+}
+
+.about-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #00eaff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.about-close-button:hover {
+  transform: scale(1.2);
+}

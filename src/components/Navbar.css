@@ -1,0 +1,85 @@
+.custom-font {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.navbar {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 15px 0;
+  width: 100%;
+}
+
+/* Glowing nav item */
+.nav-custom {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px; /* Increased padding */
+  color: #ffffff !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.3s ease, text-shadow 0.3s ease, box-shadow 0.3s ease;
+  text-shadow: 0 0 3px rgba(0, 255, 255, 0.1);
+  font-size: 1.1rem; /* Added font size */
+}
+
+/* Make buttons look like links */
+.nav-item button.nav-custom {
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 10px 20px; /* Match other nav items */
+}
+
+.nav-custom:hover {
+  color: rgb(53, 201, 201);
+  text-shadow:
+    0 0 6px rgba(53, 201, 201, 0.7),
+    0 0 12px rgba(53, 201, 201, 0.5),
+    0 0 20px rgba(53, 201, 201, 0.3);
+  box-shadow: 0 0 8px rgba(53, 201, 201, 0.2);
+}
+
+/* Animated border glow - fixed to cover entire element */
+.nav-custom::before,
+.nav-custom::after {
+  content: "";
+  position: absolute;
+  top: -2px; /* Extend beyond element */
+  left: -2px; /* Extend beyond element */
+  right: -2px; /* Extend beyond element */
+  bottom: -2px; /* Extend beyond element */
+  border: 2px solid transparent;
+  border-radius: 10px; /* Slightly larger radius */
+  pointer-events: none;
+  transition: transform 0.35s ease, border-color 0.3s ease;
+}
+
+.nav-custom::before {
+  border-top-color: rgba(53, 201, 201, 0.3);
+  border-bottom-color: rgba(53, 201, 201, 0.3);
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.nav-custom::after {
+  border-left-color: rgba(53, 201, 201, 0.3);
+  border-right-color: rgba(53, 201, 201, 0.3);
+  transform: scaleY(0);
+  transform-origin: center;
+}
+
+.nav-custom:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-custom:hover::after {
+  transform: scaleY(1);
+}
+
+/* Center all nav items vertically */
+.navbar-nav {
+  align-items: center;
+}
