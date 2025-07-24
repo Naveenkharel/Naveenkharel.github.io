@@ -29,7 +29,8 @@
 /* Text styles with refined neon glow */
 .intro-text {
   font-size: 1.8rem;
-  font-family: 'Space Grotesk', sans-serif;
+ font-family: 'Bai Jamjuree', sans-serif;
+  
   font-weight: 200;
   margin: 0;
   color: #ffffff;
@@ -40,7 +41,7 @@
 
 .display-name {
   font-size: 3rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 250;
   margin: 10px 0;
   color: #00eaff;
@@ -52,7 +53,7 @@
 
 .typing-text {
   font-size: 1.8rem;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;
   font-weight: 500;
   margin-top: 10px;
   display: flex;
